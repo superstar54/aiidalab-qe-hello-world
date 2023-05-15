@@ -1,7 +1,6 @@
 
-from aiidalab_qe.panel import PropertyPanel, ResultPanel, Panel
-from aiida.engine import ToContext, WorkChain, calcfunction
-from aiida.orm import Str, Dict, StructureData
+from aiida.engine import WorkChain
+from aiida.orm import Str, StructureData
 
 
 class HelloWorldWorkChain(WorkChain):
@@ -40,6 +39,6 @@ def get_builder(codes, structure, parameters):
                 parameters=parameters,
             )
     return builder
-    
 
-subworkchain = [HelloWorldWorkChain, get_builder]
+
+workchain_and_builder = [HelloWorldWorkChain, get_builder]

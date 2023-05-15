@@ -2,7 +2,7 @@ from aiidalab_qe.panel import ResultPanel
 import ipywidgets as ipw
 
 
-class Results(ResultPanel):
+class Result(ResultPanel):
     title = "Hello world"
     workchain_label = "hello_world"
 

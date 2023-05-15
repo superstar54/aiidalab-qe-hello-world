@@ -3,7 +3,7 @@ import ipywidgets as ipw
 from aiida.orm import Str
 
 
-class Configuration(Panel):
+class Setting(Panel):
     title = "Hello world"
 
     def __init__(self, **kwargs):

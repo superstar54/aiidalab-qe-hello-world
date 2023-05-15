@@ -7,5 +7,3 @@ def test_workchain():
     inputs = {"name": name}
     outputs, node = run_get_node(WorkChain, **inputs)
     assert outputs["name"].value == "Xing"
-    
-    
