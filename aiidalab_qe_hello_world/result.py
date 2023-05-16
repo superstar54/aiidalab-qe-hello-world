@@ -7,7 +7,9 @@ class Result(ResultPanel):
     workchain_label = "hello_world"
 
     def _update_view(self):
+        name = self.node.outputs.name.value
+        formula = self.node.outputs.structure.get_formula()
         self.summary_view = ipw.HTML(
-            """<div> <h4>Hello world: {}</h4> </div>""".format(self.node.outputs.name.value)
+            f"""<div> <h4>Hello {name}</h4> The input structure is: {formula} </div>""".format()
         )
         self.children = [ipw.HBox(children=[self.summary_view])]

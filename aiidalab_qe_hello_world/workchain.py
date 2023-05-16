@@ -17,6 +17,7 @@ class HelloWorldWorkChain(WorkChain):
             cls.result,
         )
         spec.output('name', valid_type=Str)
+        spec.output('structure', valid_type=StructureData)
 
     @classmethod
     def get_builder_from_protocol(cls, codes=None, structure=None, parameters=None):
@@ -28,6 +29,7 @@ class HelloWorldWorkChain(WorkChain):
     def result(self):
         """Add the result to the outputs."""
         self.out("name", self.inputs.name)
+        self.out("structure", self.inputs.structure)
 
 def get_builder(codes, structure, parameters):
     """Get the workchain specific parameters
