@@ -1,10 +1,11 @@
-from aiidalab_qe.panel import Panel
+from aiidalab_qe.common.panel import Panel
 import ipywidgets as ipw
 from aiida.orm import Str
 
 
 class Setting(Panel):
     title = "Hello world"
+    identifier = "hello_world"
 
     def __init__(self, **kwargs):
         self.name = ipw.Text(value="", description="Your name:")

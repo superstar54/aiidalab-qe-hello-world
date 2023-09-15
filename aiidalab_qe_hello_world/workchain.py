@@ -43,4 +43,7 @@ def get_builder(codes, structure, parameters):
     return builder
 
 
-workchain_and_builder = [HelloWorldWorkChain, get_builder]
+workchain_and_builder = {
+        "workchain": HelloWorldWorkChain,
+        "get_builder": get_builder,
+        }

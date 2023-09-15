@@ -20,7 +20,7 @@ setup(
     classifiers=[],
     packages=find_packages(),
     entry_points={
-        "aiidalab_qe.property": [
+        "aiidalab_qe.properties": [
             "hello_world = aiidalab_qe_hello_world:property",
         ],
     },
