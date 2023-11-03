@@ -4,10 +4,11 @@ import ipywidgets as ipw
 
 class Result(ResultPanel):
     title = "Hello world"
+    workchain_labels = ["hello_world"]
 
     def _update_view(self):
-        name = self.outputs.name.value
-        formula = self.outputs.structure.get_formula()
+        name = self.outputs.hello_world.name.value
+        formula = self.outputs.hello_world.structure.get_formula()
         self.summary_view = ipw.HTML(
             f"""<div> <h4>Hello {name}</h4> The input structure is: {formula} </div>""".format()
         )

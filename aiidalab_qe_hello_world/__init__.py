@@ -5,7 +5,6 @@ from aiidalab_qe.common.panel import OutlinePanel
 
 class Outline(OutlinePanel):
     title = "Hello World"
-    description = "A aiidalab-qe plugin to print hello world."
 
 
 hello_world ={

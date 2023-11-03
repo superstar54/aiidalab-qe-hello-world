@@ -22,7 +22,7 @@ class HelloWorldWorkChain(WorkChain):
     @classmethod
     def get_builder_from_protocol(cls, codes=None, structure=None, parameters=None):
         builder = cls.get_builder()
-        builder.name = parameters["name"]
+        builder.name = Str(parameters["name"])
         builder.structure = structure
         return builder
 

@@ -21,7 +21,7 @@ setup(
     packages=find_packages(),
     entry_points={
         "aiidalab_qe.properties": [
-            "hello_world = aiidalab_qe_hello_world:property",
+            "hello_world = aiidalab_qe_hello_world:hello_world",
         ],
     },
     install_requires=[
